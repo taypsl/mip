@@ -4,7 +4,7 @@ export default class ButtonToggle extends Component {
 	constructor(props) {
 		super(props)
 		this.state = { 
-			stylePath: '/assets/styles/classic.css',
+			stylePath: '/styles/classic.css',
 			buttonPressed: false
 		}
 		this.handleButtonClick = this.handleButtonClick.bind(this)
@@ -13,13 +13,13 @@ export default class ButtonToggle extends Component {
 
 	handleButtonClick() {
 		this.setState({ 
-			stylePath: '/assets/styles/8-bit.css',
+			stylePath: '/styles/8-bit.css',
 			buttonPressed: true })
 	}
 
 	resetButtonClick() {
 		this.setState({
-			stylePath: '/assets/styles/classic.css'
+			stylePath: '/styles/classic.css'
 		})
 	}
 

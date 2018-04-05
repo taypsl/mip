@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import '../App.css'
+import TitleText from '../templates/TitleText';
 
 export default class Home extends Component {
 	render() {
 		return (
-			<div className="Home">
-				<h1>Marilyn + Kip</h1>
-				<h3>June 2018</h3>
+			<div className="Home section static ">
+				<TitleText h1="Marilyn + Kip" h3="June 2018" />
 			</div>
 		)
 	}

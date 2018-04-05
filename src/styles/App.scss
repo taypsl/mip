@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Source+Sans+Pro:300,700');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* === DEFAULT LAYOUT === */
+/* This stays the same, regardless of the selected theme */
+.hidden {
+  display: none;
+}
+
+/* Parallax effect settings */
+.container {
+  /* Fixed value height for parallax effect.*/
+  height: 100vh;
+  /* Disable horizontal scrollbar. */
+  overflow-x: hidden;
+  /* Enable vertical scrolling. */
+  overflow-y: auto;
+  /* Set a simulated distance from the viewport to transformed objects.*/
+  perspective: 2px;
+}
+
+.section {
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 100vh;
+}
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */ 
+  z-index: -1;
+}
+
+/* The styling for the static div. */
+.static {
+  background: #fff;
+}
+
+/* Parallax images */
+.Sealing::after {
+  background-image: url('./assets/img-la@2x.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.Reception::after {
+  background-image: url('./assets/img-pch@2x.png');
+}
+
+
+
+/* ==== COMPONENTS ===== */
+/* Section text */
+div.Section-text-wrapper {
+  /* center text vertically */
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
+  border: 2px dashed #f69c55;
+}
+
+div.Section-text {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+h1 {
+  font-size: 4.5rem;
+  text-shadow: 0 0 2px #848484;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-shadow: 0 0 2px #848484;
+}
+
+/* Home */
+.Home {
+  text-align: center;
+  padding: 4rem;
+  background-image: url('./assets/img-print@2x.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top;
+  color: white;
+  h1, h3{
+    color: #333333;
+    text-shadow: none;
+  }
+
+}
+
+/* Sealing */
+.Sealing {
+  text-align: center;
+  h1 {
+    color: white;
+  }
+}
+
+.Sealing-info {
+  h3 {
+    text-shadow: none;
+  }
+}
+/* Reception */
+
+/* Registry */
+
+/* Rsvp */
+
+/* Photos */
+
+/* Map */
+// .Map-marker 
+.gm-style-iw * {
+  h1 {
+    font-size: 1.25rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: none;
+    font-weight: 300;
+  }
+}
+
+/* Button */
+.Button-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+
