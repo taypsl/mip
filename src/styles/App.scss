@@ -61,6 +61,8 @@ body {
 
 .Reception::after {
   background-image: url('./assets/img-pch@2x.png');
+    background-size: cover;
+  background-position: center;
 }
 
 
@@ -69,7 +71,7 @@ body {
 /* Section text */
 div.Section-text-wrapper {
   /* center text vertically */
-  height: 100vh;
+  height: 80vh;
   line-height: 100vh;
   text-align: center;
   border: 2px dashed #f69c55;
@@ -82,7 +84,7 @@ div.Section-text {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 6rem;
   text-shadow: 0 0 2px #848484;
 }
 
@@ -126,7 +128,19 @@ h3 {
   }
 }
 /* Reception */
+.Reception {
+  h1 {
+    color: white;
+  }
+}
 
+.Reception-info {
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-shadow: none;
+  }
+}
 /* Registry */
 
 /* Rsvp */

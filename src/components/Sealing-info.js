@@ -27,11 +27,13 @@ export default class SealingInfo extends Component {
 						<h2>Friday, June 29th</h2>
 					</div>
 				</div>
-				<div className="Sealing-questions">
-					<p>What is a temple sealing?</p>
-					<p>Who can go inside?</p>
-					<p>Getting to the temple</p>
-				</div>
+					
+						<div className="Sealing-questions">
+							<p>What is a temple sealing?</p>
+							<p>Who can go inside?</p>
+							<p>Getting to the temple</p>
+						</div>
+										
 				<MapContainer 
 					style={style}
 					initialCenter={latLng}
