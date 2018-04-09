@@ -7,6 +7,7 @@ import Reception from './components/Reception';
 import ReceptionInfo from './components/Reception-info';
 import Rsvp from './components/Rsvp';
 import ButtonToggle from './templates/ButtonToggle';
+import Space from './components/Space';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         	<Home />
         	<Sealing />
         	<SealingInfo />
+          <Space />
         	<Reception />
         	<ReceptionInfo />
         </div>
