@@ -54,13 +54,13 @@ body {
 
 /* Parallax images */
 .Sealing::after {
-  background-image: url('./assets/img-la@2x.png');
+  background-image: url('http://res.cloudinary.com/ddvn6aemk/image/upload/v1523574208/mip/img-la_2x.png');
   background-size: cover;
   background-position: center;
 }
 
 .Reception::after {
-  background-image: url('./assets/img-pch@2x.png');
+  background-image: url('http://res.cloudinary.com/ddvn6aemk/image/upload/v1523574230/mip/img-pch_2x.png');
     background-size: cover;
   background-position: center;
 }
@@ -143,6 +143,47 @@ h3 {
   }
 }
 /* Registry */
+.Registry {}
+
+.Registry-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Logo {
+  width: 100px;
+  height: 100px;
+}
+
+.target {
+  background-image: url('./assets/logo-targetBw.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+
+}
+
+.cAndB {
+  background-image: url('./assets/logo-cAndB.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.amazon {
+  background-image: url('./assets/logo-amazon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.giveDirectly {
+  background-image: giveDirectly('./assets/logo-giveDirectly.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
 
 /* Rsvp */
 

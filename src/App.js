@@ -5,6 +5,7 @@ import Sealing from './components/Sealing';
 import SealingInfo from './components/Sealing-info';
 import Reception from './components/Reception';
 import ReceptionInfo from './components/Reception-info';
+import Registry from './components/Registry';
 import Rsvp from './components/Rsvp';
 import ButtonToggle from './templates/ButtonToggle';
 import Space from './components/Space';
@@ -43,6 +44,7 @@ class App extends Component {
           <Space />
           <Sealing />
           <SealingInfo />
+          <Registry />
         </div>
         <ButtonToggle />
       </div>

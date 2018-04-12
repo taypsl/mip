@@ -3,3 +3,13 @@
 h1, h2, body {
 	font-family: 'Press Start 2P', cursive;
 }
+
+.Sealing::after {
+  background-image: url('http://res.cloudinary.com/ddvn6aemk/image/upload/v1523574225/mip/lds-needlePt.jpg');
+  
+}
+
+.Reception::after {
+  background-image: url('http://res.cloudinary.com/ddvn6aemk/image/upload/v1523574203/mip/pch-comicbook.jpg');
+   
+}
