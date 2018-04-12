@@ -152,15 +152,15 @@ h3 {
 }
 
 .Logo {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 90px;
 }
 
 .target {
   background-image: url('./assets/logo-targetBw.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top;
+  background-position: center;
 
 }
 
@@ -168,21 +168,30 @@ h3 {
   background-image: url('./assets/logo-cAndB.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top;
+  background-position: center;
 }
 
 .amazon {
   background-image: url('./assets/logo-amazon.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top;
+  background-position: center;
 }
 
 .giveDirectly {
-  background-image: giveDirectly('./assets/logo-giveDirectly.png');
+  background-image: url('./assets/logo-giveDirectly.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top;
+  background-position: center;
+}
+
+.Charitable-text {
+  padding: 2rem 1rem;
+  text-align: center;
+  @include md {
+    padding: 8rem 8rem;
+  }
+  
 }
 
 /* Rsvp */
