@@ -1,17 +1,5 @@
 import React, { Component } from 'react';
 import TitleText from '../templates/TitleText';
-import MapContainer from '../templates/MapContainer';
-
-const style = {
-	  width: '100%',
-	  height: '40%'
-	}
-
-
-const	latLng = {
-	lat: 34.147894,
-	lng: -118.143857
-}
 
 export default class ReceptionInfo extends Component {
 	constructor() {
@@ -28,13 +16,7 @@ export default class ReceptionInfo extends Component {
 						<p>Parking can be challenging on weeknights at this location. The map below shows nearby parking structures.</p>
 					</div>
 				</div>
-				<MapContainer 
-					style={style}
-					initialCenter={latLng}
-					zoom={15}
-					markerName="Pasadena City Hall"
-					infoWindowContent="100 Garfield Ave, Pasadena, CA 91101"
-					/>
+				
 
 			</div>
 		)

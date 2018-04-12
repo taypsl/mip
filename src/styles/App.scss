@@ -71,7 +71,7 @@ body {
 /* Section text */
 div.Section-text-wrapper {
   /* center text vertically */
-  height: 80vh;
+  height: 100vh;
   line-height: 100vh;
   text-align: center;
   border: 2px dashed #f69c55;
@@ -123,6 +123,7 @@ h3 {
 }
 
 .Sealing-info {
+
   h3 {
     text-shadow: none;
   }
@@ -151,7 +152,7 @@ h3 {
 
 /* Space */
 .Space {
-  height: 33vh;
+  height: 60vh;
 }
 
 // .Map-marker 
