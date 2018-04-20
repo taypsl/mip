@@ -51,6 +51,20 @@ const HomePlx = [
   }
 ];
 
+const ReceptionPlx = [
+  {
+    start: 1050,
+    duration: 300,
+    properties: [
+     { 
+        startValue: 0,
+         endValue: 1,
+         property: "opacity"
+      }
+    ]
+  }
+];
+
 const backgroundStyle = {
   width: "100%",
   height: "100%",
@@ -90,9 +104,10 @@ class App extends Component {
         </Plx>
         <Plx 
           className="Reception-plx"
-          parallaxData={HomePlx}
+          parallaxData={ReceptionPlx}
           style={backgroundStyle}
         >
+          <h1>Reception</h1>
         </Plx>
       </div>
     )
